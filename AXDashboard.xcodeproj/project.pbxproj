@@ -6,9 +6,102 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EDA9EDBE2D1EF68B00E6734F /* Clock.axwidget in CopyFiles */ = {isa = PBXBuildFile; fileRef = EDA9EDAF2D1EF53F00E6734F /* Clock.axwidget */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EDFEC97E2D1F07B400AFCAD8 /* AXWidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEC9762D1F07B400AFCAD8 /* AXWidgetKit.framework */; };
+		EDFEC97F2D1F07B400AFCAD8 /* AXWidgetKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEC9762D1F07B400AFCAD8 /* AXWidgetKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EDFEC9862D1F07F200AFCAD8 /* AXWidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEC9762D1F07B400AFCAD8 /* AXWidgetKit.framework */; };
+		EDFEC9872D1F07F200AFCAD8 /* AXWidgetKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDFEC9762D1F07B400AFCAD8 /* AXWidgetKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDA9EDBF2D1EF68E00E6734F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDA9ECF22D1EE83E00E6734F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDA9EDAE2D1EF53F00E6734F;
+			remoteInfo = Clock;
+		};
+		EDFEC97C2D1F07B400AFCAD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDA9ECF22D1EE83E00E6734F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDFEC9752D1F07B400AFCAD8;
+			remoteInfo = AXWidgetKit;
+		};
+		EDFEC9882D1F07F200AFCAD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDA9ECF22D1EE83E00E6734F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDFEC9752D1F07B400AFCAD8;
+			remoteInfo = AXWidgetKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EDA9EDBD2D1EF67D00E6734F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EDA9EDBE2D1EF68B00E6734F /* Clock.axwidget in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA9EDDC2D1EFA6800E6734F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EDFEC9872D1F07F200AFCAD8 /* AXWidgetKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFEC9842D1F07B400AFCAD8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EDFEC97F2D1F07B400AFCAD8 /* AXWidgetKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		EDA9ECFA2D1EE83E00E6734F /* AXDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AXDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA9EDAF2D1EF53F00E6734F /* Clock.axwidget */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Clock.axwidget; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDFEC9762D1F07B400AFCAD8 /* AXWidgetKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AXWidgetKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EDA9EDBA2D1EF58700E6734F /* Exceptions for "Widgets" folder in "AXDashboard" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Clock/AXClockWidget.swift,
+			);
+			target = EDA9ECF92D1EE83E00E6734F /* AXDashboard */;
+		};
+		EDA9EDBC2D1EF58A00E6734F /* Exceptions for "Widgets" folder in "Clock" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Clock/AXClockWidget.swift,
+			);
+			target = EDA9EDAE2D1EF53F00E6734F /* Clock */;
+		};
+		EDFEC9832D1F07B400AFCAD8 /* Exceptions for "AXWidgetKit" folder in "AXWidgetKit" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			publicHeaders = (
+				AXWidgetKit.h,
+			);
+			target = EDFEC9752D1F07B400AFCAD8 /* AXWidgetKit */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EDA9ECFC2D1EE83E00E6734F /* AXDashboard */ = {
@@ -16,10 +109,43 @@
 			path = AXDashboard;
 			sourceTree = "<group>";
 		};
+		EDA9EDB52D1EF55C00E6734F /* Widgets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EDA9EDBA2D1EF58700E6734F /* Exceptions for "Widgets" folder in "AXDashboard" target */,
+				EDA9EDBC2D1EF58A00E6734F /* Exceptions for "Widgets" folder in "Clock" target */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		EDFEC9772D1F07B400AFCAD8 /* AXWidgetKit */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EDFEC9832D1F07B400AFCAD8 /* Exceptions for "AXWidgetKit" folder in "AXWidgetKit" target */,
+			);
+			path = AXWidgetKit;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EDA9ECF72D1EE83E00E6734F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDFEC97E2D1F07B400AFCAD8 /* AXWidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA9EDAC2D1EF53F00E6734F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDFEC9862D1F07F200AFCAD8 /* AXWidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFEC9732D1F07B400AFCAD8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,7 +158,10 @@
 		EDA9ECF12D1EE83E00E6734F = {
 			isa = PBXGroup;
 			children = (
+				EDA9EDB52D1EF55C00E6734F /* Widgets */,
 				EDA9ECFC2D1EE83E00E6734F /* AXDashboard */,
+				EDFEC9772D1F07B400AFCAD8 /* AXWidgetKit */,
+				EDA9EDD72D1EFA6800E6734F /* Frameworks */,
 				EDA9ECFB2D1EE83E00E6734F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,11 +170,30 @@
 			isa = PBXGroup;
 			children = (
 				EDA9ECFA2D1EE83E00E6734F /* AXDashboard.app */,
+				EDA9EDAF2D1EF53F00E6734F /* Clock.axwidget */,
+				EDFEC9762D1F07B400AFCAD8 /* AXWidgetKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		EDA9EDD72D1EFA6800E6734F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EDFEC9712D1F07B400AFCAD8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		EDA9ECF92D1EE83E00E6734F /* AXDashboard */ = {
@@ -55,13 +203,18 @@
 				EDA9ECF62D1EE83E00E6734F /* Sources */,
 				EDA9ECF72D1EE83E00E6734F /* Frameworks */,
 				EDA9ECF82D1EE83E00E6734F /* Resources */,
+				EDA9EDBD2D1EF67D00E6734F /* CopyFiles */,
+				EDFEC9842D1F07B400AFCAD8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EDA9EDC02D1EF68E00E6734F /* PBXTargetDependency */,
+				EDFEC97D2D1F07B400AFCAD8 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				EDA9ECFC2D1EE83E00E6734F /* AXDashboard */,
+				EDA9EDB52D1EF55C00E6734F /* Widgets */,
 			);
 			name = AXDashboard;
 			packageProductDependencies = (
@@ -69,6 +222,50 @@
 			productName = AXDashboard;
 			productReference = EDA9ECFA2D1EE83E00E6734F /* AXDashboard.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EDA9EDAE2D1EF53F00E6734F /* Clock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDA9EDB02D1EF53F00E6734F /* Build configuration list for PBXNativeTarget "Clock" */;
+			buildPhases = (
+				EDA9EDAB2D1EF53F00E6734F /* Sources */,
+				EDA9EDAC2D1EF53F00E6734F /* Frameworks */,
+				EDA9EDAD2D1EF53F00E6734F /* Resources */,
+				EDA9EDDC2D1EFA6800E6734F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDFEC9892D1F07F200AFCAD8 /* PBXTargetDependency */,
+			);
+			name = Clock;
+			packageProductDependencies = (
+			);
+			productName = Clock;
+			productReference = EDA9EDAF2D1EF53F00E6734F /* Clock.axwidget */;
+			productType = "com.apple.product-type.bundle";
+		};
+		EDFEC9752D1F07B400AFCAD8 /* AXWidgetKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDFEC9802D1F07B400AFCAD8 /* Build configuration list for PBXNativeTarget "AXWidgetKit" */;
+			buildPhases = (
+				EDFEC9712D1F07B400AFCAD8 /* Headers */,
+				EDFEC9722D1F07B400AFCAD8 /* Sources */,
+				EDFEC9732D1F07B400AFCAD8 /* Frameworks */,
+				EDFEC9742D1F07B400AFCAD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EDFEC9772D1F07B400AFCAD8 /* AXWidgetKit */,
+			);
+			name = AXWidgetKit;
+			packageProductDependencies = (
+			);
+			productName = AXWidgetKit;
+			productReference = EDFEC9762D1F07B400AFCAD8 /* AXWidgetKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +278,12 @@
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					EDA9ECF92D1EE83E00E6734F = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					EDA9EDAE2D1EF53F00E6734F = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					EDFEC9752D1F07B400AFCAD8 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
@@ -100,12 +303,28 @@
 			projectRoot = "";
 			targets = (
 				EDA9ECF92D1EE83E00E6734F /* AXDashboard */,
+				EDA9EDAE2D1EF53F00E6734F /* Clock */,
+				EDFEC9752D1F07B400AFCAD8 /* AXWidgetKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EDA9ECF82D1EE83E00E6734F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA9EDAD2D1EF53F00E6734F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFEC9742D1F07B400AFCAD8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +341,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDA9EDAB2D1EF53F00E6734F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFEC9722D1F07B400AFCAD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDA9EDC02D1EF68E00E6734F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDA9EDAE2D1EF53F00E6734F /* Clock */;
+			targetProxy = EDA9EDBF2D1EF68E00E6734F /* PBXContainerItemProxy */;
+		};
+		EDFEC97D2D1F07B400AFCAD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDFEC9752D1F07B400AFCAD8 /* AXWidgetKit */;
+			targetProxy = EDFEC97C2D1F07B400AFCAD8 /* PBXContainerItemProxy */;
+		};
+		EDFEC9892D1F07F200AFCAD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDFEC9752D1F07B400AFCAD8 /* AXWidgetKit */;
+			targetProxy = EDFEC9882D1F07F200AFCAD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EDA9ED052D1EE83F00E6734F /* Debug */ = {
@@ -297,6 +548,122 @@
 			};
 			name = Release;
 		};
+		EDA9EDB12D1EF53F00E6734F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3TJDS4N2C3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024-2025 Ashwin Paudel, Aayam(X). All rights reserved.";
+				INFOPLIST_KEY_NSPrincipalClass = Clock.AXClockWidget;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aayamx.Clock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				WRAPPER_EXTENSION = axwidget;
+			};
+			name = Debug;
+		};
+		EDA9EDB22D1EF53F00E6734F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3TJDS4N2C3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024-2025 Ashwin Paudel, Aayam(X). All rights reserved.";
+				INFOPLIST_KEY_NSPrincipalClass = Clock.AXClockWidget;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aayamx.Clock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				WRAPPER_EXTENSION = axwidget;
+			};
+			name = Release;
+		};
+		EDFEC9812D1F07B400AFCAD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3TJDS4N2C3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aayamx.AXWidgetKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EDFEC9822D1F07B400AFCAD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3TJDS4N2C3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aayamx.AXWidgetKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -314,6 +681,24 @@
 			buildConfigurations = (
 				EDA9ED082D1EE83F00E6734F /* Debug */,
 				EDA9ED092D1EE83F00E6734F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDA9EDB02D1EF53F00E6734F /* Build configuration list for PBXNativeTarget "Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA9EDB12D1EF53F00E6734F /* Debug */,
+				EDA9EDB22D1EF53F00E6734F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDFEC9802D1F07B400AFCAD8 /* Build configuration list for PBXNativeTarget "AXWidgetKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDFEC9812D1F07B400AFCAD8 /* Debug */,
+				EDFEC9822D1F07B400AFCAD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
